@@ -1,0 +1,18 @@
+---
+import { PROFILE_NAME, PROFILE_DESC } from "../utils/config";
+import Avatar from "./Avatar.astro";
+---
+
+<div class="hero bg-base-200">
+  <div class="hero-content text-center">
+    <div class="max-w-md lg:max-w-xl">
+      <div class="pb-6 pt-4">
+        <h1 class="text-4xl font-bold">{PROFILE_NAME}</h1>
+        <p class="px-4 py-4 opacity-80">
+          {PROFILE_DESC}
+        </p>
+      </div>
+      <Avatar />
+    </div>
+  </div>
+</div>

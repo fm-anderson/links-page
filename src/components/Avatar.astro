@@ -1,0 +1,22 @@
+---
+import { AVATAR_IMG, PROFILE_NAME } from "../utils/config";
+import { getUserInitials } from "../utils/helper";
+
+const userInitials = getUserInitials(PROFILE_NAME);
+---
+
+<div class="flex justify-center">
+  {
+    AVATAR_IMG ? (
+      <div class="-mb-20 w-40">
+        <img class="mask mask-circle" src={AVATAR_IMG} />
+      </div>
+    ) : (
+      <div class="mask mask-circle -mb-20 flex h-40 w-40 items-center justify-center bg-neutral">
+        <div class="flex items-center justify-center text-neutral-content">
+          <span class="text-3xl">{userInitials}</span>
+        </div>
+      </div>
+    )
+  }
+</div>
