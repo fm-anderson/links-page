@@ -1,0 +1,19 @@
+---
+import { PROFILE_NAME, PHONE, EMAIL } from "../utils/config";
+const year = new Date().getFullYear();
+---
+
+<div class="my-4 flex flex-col justify-between gap-3 text-center opacity-80">
+  <div>
+    <p>{PHONE}</p>
+    <p>{EMAIL}</p>
+  </div>
+
+  <div>
+    <p class="mb-1 text-xs opacity-50">
+      <span class="uppercase">{`© ${year} ${PROFILE_NAME}.`}</span>
+      <span>All Rights Reserved.</span>
+    </p>
+    <p class="text-xs opacity-50">Created using the Links Page Template.</p>
+  </div>
+</div>

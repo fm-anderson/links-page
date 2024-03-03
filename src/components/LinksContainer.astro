@@ -1,18 +1,21 @@
 ---
-const btnTexts = [
-  "Book a free consultation",
-  "Join my VIP community",
-  "Listen to my podcast",
-  "Get in touch with me",
-];
+import { LINKS_LIST } from "../utils/config";
 ---
 
-<div class="mx-8 flex flex-col justify-center gap-5 lg:mx-auto lg:max-w-lg">
-  {
-    btnTexts.map((text) => (
-      <a href="#" target="_blank" class="btn uppercase">
-        <span class="opacity-80">{text}</span>
-      </a>
-    ))
-  }
+<div class="lg:mx-0">
+  <ul class="flex flex-col gap-6">
+    {
+      LINKS_LIST.slice(0, 5).map((item) => (
+        <li>
+          <a
+            href={item.link}
+            target="_blank"
+            class="btn w-80 uppercase lg:w-96"
+          >
+            <span class="opacity-80">{item.name}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
 </div>
