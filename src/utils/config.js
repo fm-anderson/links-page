@@ -8,6 +8,19 @@ export const PROFILE_TITLE = "Software Engineer";
 export const AVATAR_IMG =
   "https://avatars.githubusercontent.com/u/78233612?v=4";
 
+// footer
+export const PHONE = "+1 234 567 8901";
+export const EMAIL = "my-name@email.com";
+
+// links
+export const LINKS_LIST = [
+  { name: "Book a free consultation", link: "#" },
+  { name: "Join my VIP community", link: "#" },
+  { name: "Listen to my podcast", link: "#" },
+  { name: "Articles from the blog", link: "#" },
+  { name: "See List of Services", link: "#" },
+];
+
 // social icons
 export const SOCIAL_ICONS = [
   { order: 0, id: "behance", link: null },
@@ -27,6 +40,7 @@ export const SOCIAL_ICONS = [
   { order: 2, id: "twitter", link: "active" },
   { order: 0, id: "upwork", link: null },
   { order: 0, id: "venmo", link: null },
+  { order: 0, id: "x", link: null },
   { order: 0, id: "whatsapp", link: null },
   { order: 3, id: "youtube", link: "active" },
   { order: 0, id: "zoom", link: null },
