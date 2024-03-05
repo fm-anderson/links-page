@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import { AVATAR_IMG, PROFILE_NAME } from "../utils/config";
 import { getUserInitials } from "../utils/helper";
+import { AVATAR_IMG, PROFILE_NAME } from "../utils/config";
 
 const userInitials = getUserInitials(PROFILE_NAME);
 ---
@@ -10,13 +10,15 @@ const userInitials = getUserInitials(PROFILE_NAME);
   {
     AVATAR_IMG ? (
       <div class="-mb-20">
-        <Image
-          src={AVATAR_IMG}
-          width="160"
-          height="160"
-          alt="profile image"
-          class="mask mask-circle"
-        />
+        <div class="rounded-full ring ring-secondary ring-offset-2 ring-offset-base-100">
+          <Image
+            src={AVATAR_IMG}
+            width="160"
+            height="160"
+            alt="profile image"
+            class="mask mask-circle"
+          />
+        </div>
       </div>
     ) : (
       <div class="mask mask-circle -mb-20 flex h-40 w-40 items-center justify-center bg-neutral">

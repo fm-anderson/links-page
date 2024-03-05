@@ -5,8 +5,7 @@ export const SITE_DESCRIPTION = "Links Page for Social Media";
 // profile
 export const PROFILE_NAME = "Anderson Marques";
 export const PROFILE_TITLE = "Software Engineer";
-export const AVATAR_IMG =
-  "https://avatars.githubusercontent.com/u/78233612?v=4";
+export const AVATAR_IMG = "/avatar.webp";
 
 // footer
 export const PHONE = "+1 234 567 8901";
