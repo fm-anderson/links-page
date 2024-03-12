@@ -1,5 +1,7 @@
 # Links Page Template with Astro
 
+Live Preview: https://linkspage-template.netlify.app/
+
 ## Project Setup Guide
 
 This guide is designed to help developers set up the project environment, configure the page, and explore theme options efficiently.
